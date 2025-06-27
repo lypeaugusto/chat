@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-print("API KEY:", os.environ.get("OPENAI_API_KEY")) 
+print("API KEY:", os.environ.get("OPENAI_API_KEY"))
+
 
 @app.route("/chat", methods=["POST"])
 def chat():
